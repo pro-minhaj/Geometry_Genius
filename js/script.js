@@ -112,7 +112,11 @@ document.getElementById('triangle-edit-value').addEventListener('click', functio
 });
 
 document.getElementById('triangle-edit-update').addEventListener('click', function(){
-
+    const triangleBFiledValue = getInputFiledValue('triangle-b-filed');
+    const triangleHFiledValue = getInputFiledValue('triangle-h-filed');
+    if(isNaN(triangleBFiledValue) || isNaN(triangleHFiledValue)){
+        return alert('Places Enter Your Value');
+    }
     editUpdate('triangle-edit', 'block', 'triangle-b-filed', 'triangle-h-filed', 'triangle-b-value', 'triangle-h-value', 'triangle-value-filed', 'none');
 });
 
@@ -136,6 +140,11 @@ document.getElementById('Rectangle-edit-value').addEventListener('click', functi
 });
 
 document.getElementById('Rectangle-edit-update').addEventListener('click', function(){
+    const triangleBFiledValue = getInputFiledValue('triangle-b-filed');
+    const triangleHFiledValue = getInputFiledValue('triangle-h-filed');
+    if(isNaN(triangleBFiledValue) || isNaN(triangleHFiledValue)){
+        return alert('Places Enter Your Value');
+    }
     editUpdate('Rectangle-edit', 'block', 'Rectangle-b-filed', 'Rectangle-h-filed', 'Rectangle-b-value', 'Rectangle-h-value', 'Rectangle-value-filed', 'none');
 });
 
@@ -159,6 +168,11 @@ document.getElementById('Parallelogram-edit-value').addEventListener('click', fu
 });
 
 document.getElementById('Parallelogram-edit-update').addEventListener('click', function(){
+    const triangleBFiledValue = getInputFiledValue('triangle-b-filed');
+    const triangleHFiledValue = getInputFiledValue('triangle-h-filed');
+    if(isNaN(triangleBFiledValue) || isNaN(triangleHFiledValue)){
+        return alert('Places Enter Your Value');
+    }
     editUpdate('Parallelogram-edit', 'block', 'Parallelogram-b-filed', 'Parallelogram-h-filed', 'Parallelogram-b-value', 'Parallelogram-h-value', 'Parallelogram-value-filed', 'none');
 });
 
@@ -182,6 +196,11 @@ document.getElementById('Rhombus-edit-value').addEventListener('click', function
 });
 
 document.getElementById('Rhombus-edit-update').addEventListener('click', function(){
+    const triangleBFiledValue = getInputFiledValue('triangle-b-filed');
+    const triangleHFiledValue = getInputFiledValue('triangle-h-filed');
+    if(isNaN(triangleBFiledValue) || isNaN(triangleHFiledValue)){
+        return alert('Places Enter Your Value');
+    }
     editUpdate('Rhombus-edit', 'block', 'Rhombus-b-filed', 'Rhombus-h-filed', 'Rhombus-b-value', 'Rhombus-h-value', 'Rhombus-value-filed', 'none');
 });
 
@@ -205,6 +224,11 @@ document.getElementById('Pentagon-edit-value').addEventListener('click', functio
 });
 
 document.getElementById('Pentagon-edit-update').addEventListener('click', function(){
+    const triangleBFiledValue = getInputFiledValue('triangle-b-filed');
+    const triangleHFiledValue = getInputFiledValue('triangle-h-filed');
+    if(isNaN(triangleBFiledValue) || isNaN(triangleHFiledValue)){
+        return alert('Places Enter Your Value');
+    }
     editUpdate('Pentagon-edit', 'block', 'Pentagon-b-filed', 'Pentagon-h-filed', 'Pentagon-b-value', 'Pentagon-h-value', 'Pentagon-value-filed', 'none');
 });
 
@@ -235,5 +259,10 @@ document.getElementById('Ellipse-edit-value').addEventListener('click', function
 });
 
 document.getElementById('Ellipse-edit-update').addEventListener('click', function(){
+    const triangleBFiledValue = getInputFiledValue('triangle-b-filed');
+    const triangleHFiledValue = getInputFiledValue('triangle-h-filed');
+    if(isNaN(triangleBFiledValue) || isNaN(triangleHFiledValue)){
+        return alert('Places Enter Your Value');
+    }
     editUpdate('Ellipse-edit', 'block', 'Ellipse-b-filed', 'Ellipse-h-filed', 'Ellipse-b-value', 'Ellipse-h-value', 'Ellipse-value-filed', 'none');
 });
