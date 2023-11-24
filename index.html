@@ -9,7 +9,7 @@
 
     <style>
         .container{
-            width: 80%;
+            width: 85%;
             padding: 0 30px;
             margin: auto;
         }
@@ -36,23 +36,23 @@
                 <div class="mb-6 h-full">
                     <img class="w-full h-full" src="./img/triangle.png" alt="">
                 </div>
-                <div>
-                    <h3 class="text-[#414141] text-lg font-semibold mb-1">Triangle</h3>
-                    <h6 class="text-[#414141] font-normal">Area (A) = 0.5 x b x h</h6>
-                    <div id="triangle-edit" class="hidden">
-                        <div class="flex justify-center gap-3 my-2">
-                            <div>
-                                b = <span id="triangle-b-value">0</span> cm
-                            </div>
-                            <div>
-                                h = <span id="triangle-h-value">0</span> cm
-                            </div>
-                            <button id="triangle-edit-value">
-                                <img src="./img/Group 38932.png" alt="">
-                            </button>
+                <h3 class="text-[#414141] text-lg font-semibold mb-1">Triangle</h3>
+                <h6 class="text-[#414141] font-normal">Area (A) = 0.5 x b x h</h6>
+                <div id="triangle-edit" class="hidden">
+                    <div class="flex justify-center gap-3 my-2">
+                        <div>
+                            b = <span id="triangle-b-value">0</span> cm
                         </div>
+                        <div>
+                            h = <span id="triangle-h-value">0</span> cm
+                        </div>
+                        <button id="triangle-edit-value">
+                            <img src="./img/Group 38932.png" alt="">
+                        </button>
                     </div>
-                    <div class="flex items-center gap-3 my-4">
+                </div>
+                <div id="triangle-value-filed" class="w-full">
+                    <div class="flex items-center justify-between w-full my-4">
                         <input id="triangle-b-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
                         <label for="triangle-b-filed">cm</label>
                         <input id="triangle-h-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="h">
@@ -70,181 +70,177 @@
                 <div class="mb-6 h-full">
                     <img class="w-full h-full" src="./img/rectangle.png" alt="">
                 </div>
-                <div>
-                    <h3 class="text-[#414141] text-lg font-semibold mb-1">Rectangle</h3>
-                    <h6 class="text-[#414141] font-normal">Area (A) = w x I</h6>
+                <h3 class="text-[#414141] text-lg font-semibold mb-1">Rectangle</h3>
+                <h6 class="text-[#414141] font-normal">Area (A) = w x I</h6>
+                <div id="Rectangle-edit" class="hidden">
                     <div class="flex justify-center gap-3 my-2">
                         <div>
-                            w = <span>4</span> cm
+                            w = <span id="Rectangle-b-value">0</span> cm
                         </div>
                         <div>
-                            l = <span>6</span> cm
+                            l = <span id="Rectangle-h-value">0</span> cm
                         </div>
-                        <button>
+                        <button id="Rectangle-edit-value">
                             <img src="./img/Group 38932.png" alt="">
                         </button>
                     </div>
-                    <div class="flex items-center gap-3 my-4">
-                        <input id="" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="w">
-                        <label for="">cm</label>
-                        <input class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="l">
-                        <label for="">cm</label>
-                        <button class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded">
+                </div>
+                <div id="Rectangle-value-filed" class="w-full">
+                    <div class="flex items-center justify-between w-full my-4">
+                        <input id="Rectangle-b-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="w">
+                        <label for="Rectangle-b-filed">cm</label>
+                        <input id="Rectangle-h-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="l">
+                        <label for="Rectangle-h-filed">cm</label>
+                        <button id="Rectangle-edit-update" class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded hidden">
                             <i class="fa-solid fa-check"></i>
                         </button>
                     </div>
                 </div>
                 <div class="mt-4 w-full">
-                    <button class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
+                    <button id="Rectangle-calculate-btn" class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
                 </div>
             </div>
             <div class="px-10 py-10 border rounded-lg flex flex-col  items-center text-center">
                 <div class="mb-6 h-full">
                     <img class="w-full h-full" src="./img/parallelogram.png" alt="">
                 </div>
-                <div>
-                    <h3 class="text-[#414141] text-lg font-semibold mb-1">Parallelogram</h3>
-                    <h6 class="text-[#414141] font-normal">Area (A) = b x h</h6>
+                <h3 class="text-[#414141] text-lg font-semibold mb-1">Parallelogram</h3>
+                <h6 class="text-[#414141] font-normal">Area (A) = b x h</h6>
+                <div id="Parallelogram-edit" class="hidden">
                     <div class="flex justify-center gap-3 my-2">
                         <div>
-                            b = <span>4</span> cm
+                            b = <span id="Parallelogram-b-value">0</span> cm
                         </div>
                         <div>
-                            h = <span>6</span> cm
+                            h = <span id="Parallelogram-h-value"></span> cm
                         </div>
-                        <button>
+                        <button id="Parallelogram-edit-value">
                             <img src="./img/Group 38932.png" alt="">
                         </button>
                     </div>
-                    <div class="flex items-center gap-3 my-4">
-                        <input id="" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
-                        <label for="">cm</label>
-                        <input class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="h">
-                        <label for="">cm</label>
-                        <button class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded">
+                </div>
+                <div id="Parallelogram-value-filed" class="w-full">
+                    <div class="flex items-center justify-between w-full my-4">
+                        <input id="Parallelogram-b-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
+                        <label for="Parallelogram-b-filed">cm</label>
+                        <input id="Parallelogram-h-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="h">
+                        <label for="Parallelogram-h-filed">cm</label>
+                        <button id="Parallelogram-edit-update" class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded hidden">
                             <i class="fa-solid fa-check"></i>
                         </button>
                     </div>
                 </div>
                 <div class="mt-4 w-full">
-                    <button class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
+                    <button id="Parallelogram-calculate-btn" class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
                 </div>
             </div>
-            <div class="px-10 py-10 border rounded-lg flex flex-col  items-center text-center row-span-2">
+            <div class="px-8 py-10 border rounded-lg flex flex-col  items-center text-center row-span-2">
+                <!-- Heading -->
                 <h2 class="text-[#111111] text-xl font-semibold underline underline-offset-4 opacity-80">Area Calculation</h2>
-                <div>
-                    <ol class="flex flex-col gap-6 list-decimal mt-7">
-                        <li class=" text-[#414141] text-base font-normal">
-                            <div class="flex items-center gap-4">
-                                <span>Triangle</span>
-                                <span>12cm<sup>2</sup></span>
-                                <button class="bg-[#1090D8] text-[#fff] text-sm font-medium px-3 py-1 rounded-md">Covert to m<sup>2</sup></button>
-                            </div>
-                        </li>
-                        <li class=" text-[#414141] text-base font-normal">
-                            <div class="flex items-center gap-4">
-                                <span>Triangle</span>
-                                <span>12cm<sup>2</sup></span>
-                                <button class="bg-[#1090D8] text-[#fff] text-sm font-medium px-3 py-1 rounded-md">Covert to m<sup>2</sup></button>
-                            </div>
-                        </li>
-                    </ol>
-                </div>
+                <!-- Area Calculation -->
+                <ol id="area-calculation" class="flex flex-col gap-6 list-decimal mt-7 w-full">
+                </ol>
             </div>
             <div class="px-10 py-10 border rounded-lg flex flex-col  items-center text-center">
                 <div class="mb-6 h-full">
                     <img class="w-full h-full" src="./img/rhombus.png" alt="">
                 </div>
-                <div>
-                    <h3 class="text-[#414141] text-lg font-semibold mb-1">Rhombus</h3>
-                    <h6 class="text-[#414141] font-normal">Area (A) = 0.5 x d 1 x d 2</h6>
+                <h3 class="text-[#414141] text-lg font-semibold mb-1">Rhombus</h3>
+                <h6 class="text-[#414141] font-normal">Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub></h6>
+                <div id="Rhombus-edit" class="hidden">
                     <div class="flex justify-center gap-3 my-2">
                         <div>
-                            b <sub>1</sub> = <span>16</span> cm
+                            b <sub>1</sub> = <span id="Rhombus-b-value">0</span> cm
                         </div>
                         <div>
-                            d <sub>2</sub> = <span>8</span> cm
+                            d <sub>2</sub> = <span id="Rhombus-h-value">0</span> cm
                         </div>
-                        <button>
+                        <button id="Rhombus-edit-value">
                             <img src="./img/Group 38932.png" alt="">
                         </button>
                     </div>
-                    <div class="flex items-center gap-3 my-4">
-                        <input id="" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
-                        <label for="">cm</label>
-                        <input class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="d">
-                        <label for="">cm</label>
-                        <button class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded">
+                </div>
+                <div id="Rhombus-value-filed" class="w-full">
+                    <div class="flex items-center justify-between w-full my-4">
+                        <input id="Rhombus-b-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
+                        <label for="Rhombus-b-filed">cm</label>
+                        <input id="Rhombus-h-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="d">
+                        <label for="Rhombus-h-filed">cm</label>
+                        <button id="Rhombus-edit-update" class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded hidden">
                             <i class="fa-solid fa-check"></i>
                         </button>
                     </div>
                 </div>
                 <div class="mt-4 w-full">
-                    <button class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
+                    <button id="Rhombus-calculate-btn" class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
                 </div>
             </div>
             <div class="px-10 py-10 border rounded-lg flex flex-col  items-center text-center">
                 <div class="mb-6 h-full">
                     <img class="w-full h-full" src="./img/pentagon.png" alt="">
                 </div>
-                <div>
                     <h3 class="text-[#414141] text-lg font-semibold mb-1">Pentagon</h3>
                     <h6 class="text-[#414141] font-normal">Area (A) = 0.5 x p x b</h6>
-                    <div class="flex justify-center gap-3 my-2">
-                        <div>
-                            p = <span>4</span> cm
+                    <div id="Pentagon-edit" class="hidden">
+                        <div class="flex justify-center gap-3 my-2">
+                            <div>
+                                p = <span id="Pentagon-b-value">0</span> cm
+                            </div>
+                            <div>
+                                b = <span id="Pentagon-h-value">0</span> cm
+                            </div>
+                            <button id="Pentagon-edit-value">
+                                <img src="./img/Group 38932.png" alt="">
+                            </button>
                         </div>
-                        <div>
-                            b = <span>6</span> cm
+                    </div>
+                    <div id="Pentagon-value-filed" class="w-full">
+                        <div class="flex items-center justify-between w-full my-4">
+                            <input id="Pentagon-b-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="p">
+                            <label for="Pentagon-b-filed">cm</label>
+                            <input id="Pentagon-h-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
+                            <label for="Pentagon-h-filed">cm</label>
+                            <button id="Pentagon-edit-update" class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded hidden">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
                         </div>
-                        <button>
-                            <img src="./img/Group 38932.png" alt="">
-                        </button>
                     </div>
-                    <div class="flex items-center gap-3 my-4">
-                        <input id="" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="p">
-                        <label for="">cm</label>
-                        <input class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
-                        <label for="">cm</label>
-                        <button class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded">
-                            <i class="fa-solid fa-check"></i>
-                        </button>
-                    </div>
-                </div>
                 <div class="mt-4 w-full">
-                    <button class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
+                    <button id="Pentagon-calculate-btn" class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
                 </div>
             </div>
             <div class="px-10 py-10 border rounded-lg flex flex-col  items-center text-center">
                 <div class="mb-6 h-full">
                     <img class="w-full h-full" src="./img/ellipse.png" alt="">
                 </div>
-                <div>
-                    <h3 class="text-[#414141] text-lg font-semibold mb-1">Ellipse</h3>
-                    <h6 class="text-[#414141] font-normal">Area (A) = &Pi; ab</h6>
+                <h3 class="text-[#414141] text-lg font-semibold mb-1">Ellipse</h3>
+                <h6 class="text-[#414141] font-normal">Area (A) = &Pi; ab</h6>
+                <div id="Ellipse-edit" class="hidden">
                     <div class="flex justify-center gap-3 my-2">
                         <div>
-                            a = <span>4</span> cm
+                            a = <span id="Ellipse-b-value">0</span> cm
                         </div>
                         <div>
-                            b = <span>6</span> cm
+                            b = <span id="Ellipse-h-value">0</span> cm
                         </div>
-                        <button>
+                        <button id="Ellipse-edit-value">
                             <img src="./img/Group 38932.png" alt="">
                         </button>
                     </div>
-                    <div class="flex items-center gap-3 my-4">
-                        <input id="" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="a">
-                        <label for="">cm</label>
-                        <input class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
-                        <label for="">cm</label>
-                        <button class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded">
+                </div>
+                <div id="Ellipse-value-filed" class="w-full">
+                    <div class="flex items-center justify-between w-full my-4">
+                        <input id="Ellipse-b-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="a">
+                        <label for="Ellipse-b-filed">cm</label>
+                        <input id="Ellipse-h-filed" class="w-20 bg-[#F1F1F1] rounded px-2 py-1 outline-none text-black" type="text" placeholder="b">
+                        <label for="Ellipse-h-filed">cm</label>
+                        <button id="Ellipse-edit-update" class="bg-[#1090D8] text-[#FFFFFF] px-2 py-1 rounded hidden">
                             <i class="fa-solid fa-check"></i>
                         </button>
                     </div>
                 </div>
                 <div class="mt-4 w-full">
-                    <button class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
+                    <button id="Ellipse-calculate-btn" class="bg-[#1090D8] rounded-lg text-white text-lg font-medium w-full py-2">Calculate</button>
                 </div>
             </div>
         </section>
